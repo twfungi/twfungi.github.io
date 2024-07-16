@@ -103202,7 +103202,7 @@ s($,"bbf","aRp",()=>A.a([A.a7("meta.general.edible.notedible","not-edible"),A.a7
 s($,"bbp","aRz",()=>A.a([A.a7("meta.general.smell.mild","mild"),A.a7("meta.general.smell.fishy","fishy"),A.a7("meta.general.smell.mushroomy","mushroomy"),A.a7("meta.general.smell.earthy","earthy"),A.a7("meta.general.smell.sweet","sweet"),A.a7("meta.general.smell.stinky","stinky"),A.a7("meta.general.smell.other","other")],t.q))
 s($,"bbv","aRF",()=>A.a([A.a7("meta.general.taste.mild","mild"),A.a7("meta.general.taste.bitter","bitter"),A.a7("meta.general.taste.peppery","peppery"),A.a7("meta.general.taste.sweet","sweet"),A.a7("meta.general.taste.spicy","spicy"),A.a7("meta.general.taste.other","other")],t.q))
 s($,"bac","aQL",()=>{var q=null,p=t.q2
-p=A.a([A.aCm(new A.azp(),"/",A.a([A.aCm(new A.azq(),"species/:name",B.ud)],p))],p)
+p=A.a([A.aCm(new A.azp(),"/",A.a([A.aCm(new A.azq(),"webfungi_deploy/species/:name",B.ud)],p))],p)
 return A.aV0(!1,new A.azr(),q,q,q,q,q,q,q,!1,q,!0,q,!1,new A.Yd(new A.aky(p,A.b4H(),5)))})
 s($,"baH","aFI",()=>A.c8("[&<\\u0001-\\u0008\\u000b\\u000c\\u000e-\\u001f\\u007f-\\u0084\\u0086-\\u009f]|]]>",!0,!1))
 s($,"bai","aQP",()=>A.c8("['&<\\n\\r\\t\\u0001-\\u0008\\u000b\\u000c\\u000e-\\u001f\\u007f-\\u0084\\u0086-\\u009f]",!0,!1))
