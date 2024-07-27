@@ -1,9 +1,6 @@
 title: "Fungi Booklet"
 
 yes: "Yes"
-edit: "Edit"
-save: "Save"
-upload: "Upload"
 close: "Close"
 no: "No"
 continue: "Continue"
@@ -25,6 +22,7 @@ saving: "Saving..."
 connectionlost: "Disconnected..."
 connectedtoInternet: "Connected to Internet..."
 serverdown: "Server error:"
+debug: "Debug"
 
 search:
   title: "Search"
@@ -71,40 +69,6 @@ search:
     toomany: "Too many results."
     applyfilters: "Please try applying more filters."
 
-home:
-  title: "Home"
-
-obs:
-  title: "My Observations"
-  pickdate: "Pick a date"
-  inputdate: "Enter date"
-  name: "Name"
-  date: "Date"
-  location: "Location"
-  showunknowns: "Show unknowns only"
-  expandtree: "Expand records view"
-  filters: "Filters"
-  alldata: "ALL"
-  add:
-    title: "New Observation"
-    species-hint: "enter scientific name"
-    lname-hint: "enter common name"
-    loc-hint: "(Optional) enter location"
-    note: "Note"
-    note-hint: "(Optional) more notes here"
-  confirm:
-    title: "Confirm Group Type"
-    description: "The entered name is not found in the database or its group type is unknown. Choose a type and confirm."
-  del:
-    title: "Delete Record"
-    description: "Do you want to delete this observation record and its photos?"
-    single-title: "Delete Photo"
-    single-description: "Do you want to delete this photo?"
-    deleted: "Deleted, please go back to previous screen."
-  tabview:
-    title: "Delete{allowedit}"
-    description: "Confirm delete{allowedit} all the record(s) and photos of \"{key}\". This operation cannot be recovered."
-    allowedit: "/edit"
 db:
   title: "Fungi"
   species: "Species"
@@ -130,213 +94,7 @@ db:
   author: "Credit"
   author-na: "N/A"
   syn: "syn."
-  restart:
-    title: "Update Available"
-    description: "The database update is downloaded. Do you want to take effect now?"
-    rightnow: "Right Now"
-    reboot: "Next Launch"
-  updated:
-    title: "Update Complete"
-    description: "The database is now updated, with {number} update(s) in total. Press \"Yes\" to review the details."
-    desc2: "Database contains {number} update(s) in total"
-    nomore: "Don't show this dialog again"
-  download:
-    complete: "Database images updated ({number})"
-    failed: "Database images update failed"
-    nothing: "Database is already the latest"
-  ops:
-    delete_image: "Remove this image from database"
-    move_to_top: "Move this image to top"
-
-map:
-  title: "Rainfalls of Taiwan"
-  radar: "Radar"
-  singleday: "One-"
-  multidays: "Multi-"
-  accumulate: "Day"
-  addmarker:
-    title: "Add Marker"
-    description: "Do you want to add a marker here?"
-    hinttext: "Enter the marker name here..."
-  deletemarker:
-    description: "Do you want to delete this mark?"
-
-settings:
-  title: "Settings"
-  general:
-    title: "General"
-    language:
-        title: "Language"
-        system: "System"
-        zh_hant: "Traditional Chinese"
-        zh_hans: "Simplified Chinese"
-        en: "English"
-    appearance:
-      title: "Appearance"
-      system: "System"
-      light: "Light"
-      dark: "Dark"
-    font:
-      title: "Font Size"
-      system: "System"
-      small: "Small"
-      medium: "Medium"
-      large: "Large"
-    weather: "Show rainfalls of Taiwan"
-  account:
-    title: "Login with Facebook"
-    signin: "Admin sign-in"
-    signout: "Admin sign-out"
-  database:
-    title: "Database"
-    shownumber: "Show number of species"
-    sortbyspiecescount: "Sort by species counts"
-    showscinames: "Show scientific names"
-    showshortnames: "Abbrev. genus names"
-    showsynonyms: "Show synonyms"
-    thumbnail:
-      title: "Thumbnail settings"
-      speciesperrow:
-        title: "Species per row"
-        opt-1: "XL：1 species per row"
-        opt-2: "M：2 species per row"
-        opt-3: "S：3 species per row"
-        opt-4: "SS：4 species per row"
-        notforbigfonts: "Not applicable for big fonts"
-      thumbnailperspecies:
-        title: "Thumbnails per species"
-        opt-1: "Display 1 image"
-        opt-2: "Display 2 images"
-        opt-3: "Display 3 images"
-    offline:
-      title: "Download images"
-      opt-networkonly: "Off"
-      opt-1: "1/species"
-      opt-2: "2/species"
-      opt-3: "3/species"
-      opt-4: "4/species"
-      opt-5: "5/species"
-      opt-6: "6/species"
-      opt-all: "Download all"
-    downloadoptions:
-      title: "Auto download Options"
-      any: "Mobile+WiFi"
-      wifi: "WiFi only"
-      off: "Off"
-    download:
-      title: "Download Now"
-      progress: "progress {number1}%"
-      pause: "Pause"
-      resume: "Resume"
-      restart: "Restart"
-    clear:
-      title: "Clear downloaded images"
-      description: "Are you sure you want to delete all the downloaded images on this device?"
-      keepone: "Keep 1 img/species"
-    add:
-      title: "Add a species"
-      title2: "Add more photos"
-      species: "Sci. Name"
-      species-hint: "Enter Latin scientific name... "
-      localname-en: "Common Name"
-      localname-en-hint: "(optional) Enter common name separated by commas ..."
-      localname-zh_hant: "中文俗名"
-      localname-zh_hant-hint: "(選填) 不同中文名之間以逗號分隔..."
-      credit: "Photo Credit"
-      credit-hint: "Enter the photographer's name..."
-      extlink: "URL"
-      extlink-hint: "Type a URL..."
-      images: "Add images..."
-      error-species-empty: "Species name cannot be empty."
-      error-species-format-error: "Format error in the species name."
-      error-credit-empty: "You have to fill in a name in the photo credit."
-      error-record-empty: "Invalid date."
-      error-invalid-url: "External URL is invalid."
-      error-already-exists: "Record already exists."
-      error-images: "Please pick at least 2 photos."
-      error-images-1: "Please pick at least 1 photo."
-      error-extension: "Only JPG/JPEG or HEIC images are allowed."
-      error-mailer: "No Mail app available for submission."
-      mail-savedtodraft: "Mail saved to draft."
-      mail-sent: "Mail was sent."
-      mail-canceled: "Mail was canceled."
-      mail-unknown: "Unknown error occurred when trying to send."
-      submitting: "Sending after resizing photos..."
-      license-info: "Photos will be shared under Creative Commons BY-NC"
-      license-mail: "I confirm all the attached data and photos in this mail are original and made/taken by me. I agree to share them under Creative Commons BY-NC 3.0 license. https://creativecommons.org/licenses/by-nc/3.0/us/"
-      first-photo: "The 1st photo (in landscape layout) must be the most representative."
-    submitmeta:
-      title: "Upload Meta Data"
-      description: "Items(s) to be uploaded: meta({number}), records({number2})."
-      sending: "Sending, please wait..."
-      successful: "Successful"
-      failed: "Failed"
-    change:
-      sci_name: "(New)Scientific name"
-      local_name: "(新)物種中文名"
-      genus_chinese: "(新)屬中文名"
-      type_species: "Type species"
-      groups: "Groups"
-    diff:
-      title: "Latest Changes"
-      legend: "Legend"
-      newly-added: "New record"
-      newly-changed: "Recent change"
-      deleted: "Deleted"
-    colordelta:
-      title: "Color Search Tolerance"
-      verylow: "Very low"
-      low: "Low"
-      medium: "Medium"
-      high: "High"
-    env-stage: "Stage Channel"
-  obs:
-    title: "My Observations"
-    quality:
-      title: "Image Quality"
-      high: "High (2560x1440)"
-      medium: "Medium (1920x1080)"
-      low: "Low (1280x760)"
-  map:
-    title: "Map"
-    source:
-      title: "Map Source"
-      osm: "Open Street Map (Online)"
-      rudymap: "Rudy's Taiwan TOPO (Online)"
-  misc:
-    title: "Misc"
-    termsofuse: "Terms of Use"
-    privacy: "Privacy Policy"
-    admin:
-      title: "Admin Only"
-    feedback:
-      title: "Feedback"
-      mailbody1: "Hi! Fungi,"
-      mailbody2: "This is my feedback:"
-      relatedinfo: "Other info:"
-    contribute:
-      title: "Acknowledgement"
-      contribution: "{author} contributed {images} images in {species} species."
-    reset:
-      title: "Reset to Defaults"
-      description: "Press Yes to reset all settings to default values."
-  totalspecies: "Total Species"
-  totalimages: "Total Images"
-  app-version: "App Version"
-  db-version: "Database"
-  platform: "Device OS"
-  date: "Date"
-
-download:
-  title: "Download"
-  start: "Start"
-  downloading: "Downloading"
-  completed: "Completed"
-  failed: "Failed"
-  prep:
-    title: "To Start"
-    description: "Do you want to download only unsaved images?"
-    startover: "No, Start Over"
+  copytoclipboard: "copy to clipboard"
 
 err:
   title-noreason: "Error"
@@ -346,6 +104,7 @@ err:
   filenotfound: 'File not found: {file}'
   dberror: 'The data might have been removed or renamed.'
   range-error: "Invalid ranges"
+  invalidroute: 'Invalid Route'
 
 meta:
   selectcolors: "Select colors"

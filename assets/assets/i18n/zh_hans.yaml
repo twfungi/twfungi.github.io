@@ -1,9 +1,6 @@
 title: "方吉小册"
 
 yes: "确定"
-edit: "编辑"
-save: "储存"
-upload: "上傳"
 close: "关闭"
 no: "否"
 continue: "继续"
@@ -25,6 +22,7 @@ saving: "储存中..."
 connectionlost: "网路已中断..."
 connectedtoInternet: "网路已成功连线..."
 serverdown: "方吉老家错误:"
+debug: "除错"
 
 search:
   title: "搜寻"
@@ -71,40 +69,6 @@ search:
     toomany: "太多搜寻结果"
     applyfilters: "请选择更多搜寻条件"
 
-home:
-  title: "首页"
-
-obs:
-  title: "我的观察纪录"
-  pickdate: "选择日期"
-  inputdate: "输入日期"
-  name: "名称"
-  date: "日期"
-  location: "地点"
-  showunknowns: "只显示未知物种"
-  expandtree: "扩展显示"
-  filters: "过滤选项"
-  alldata: "全部纪录"
-  add:
-    title: "新增观察纪录"
-    species-hint: "物种拉丁学名"
-    lname-hint: "中文名称"
-    loc-hint: "(选填) 观察地点"
-    note: "注记"
-    note-hint: "输入补充纪录"
-  confirm:
-    title: "确认分类与修改"
-    description: "输入的学名在资料库不存在或是分类未知，请确定学名与分类后储存。"
-  del:
-    title: "删除"
-    description: "确定要删除观察纪录与照片吗？"
-    single-title: "删除照片"
-    single-description: "确定要删除这张照片吗？"
-    deleted: "此笔纪录已删除，请回到前页。"
-  tabview:
-    title: "删除{allowedit}"
-    description: "请确定删除{allowedit} \"{key}\" 全部的观察纪录与照片，此操作无法复原。"
-    allowedit: "/编辑"
 db:
   title: "方吉资料库"
   species: "种"
@@ -130,213 +94,7 @@ db:
   author: "拍摄者"
   author-na: "佚名"
   syn: "同"
-  restart:
-    title: "更新"
-    description: "新的资料库已下载完成。"
-    rightnow: "立即生效"
-    reboot: "重启后生效"
-  updated:
-    title: "更新完成"
-    description: "资料库更新已完成，此次共有 {number} 笔资料增修，按下「确定」可查看更新细节。"
-    desc2: "此次更新包含 {number} 笔照片资料增修。"
-    nomore: "不再显示此对话框"
-  download:
-    complete: "资料库图片下载完成 ({number})"
-    failed: "资料库图片下载失败"
-    nothing: "资料库图片已是最新版本"
-  ops:
-    delete_image: "删除此照片"
-    move_to_top: "设为第一张照片"
-
-map:
-  title: "台湾降雨量"
-  radar: "雷达"
-  singleday: "单日"
-  multidays: "多日"
-  accumulate: "累积"
-  addmarker:
-    title: "新增标记"
-    description: "您要标记这个地点吗？"
-    hinttext: "输入标记名称..."
-  deletemarker:
-    description: "您要删除这个标记吗？"
-
-settings:
-  title: "设定"
-  general:
-    title: "一般"
-    language:
-      title: "语言"
-      system: "系统设定"
-      zh_hant: "繁体中文"
-      zh_hans: "简体中文"
-      en: "英语/English"
-    appearance:
-      title: "显示模式"
-      system: "系统设定"
-      light: "浅色"
-      dark: "深色"
-    font:
-      title: "字体大小"
-      system: "系统设定"
-      small: "小字体"
-      medium: "一般字体"
-      large: "大字体"
-    weather: "显示台湾降雨量"
-  account:
-    title: "与 Facebook 帐号连结"
-    signin: "管理员登入"
-    signout: "管理员登出"
-  database:
-    title: "资料库"
-    shownumber: "显示物种总数"
-    sortbyspiecescount: "以每属物种数排序"
-    showscinames: "显示拉丁学名"
-    showshortnames: "使用属名缩写"
-    showsynonyms: "显示同物异名"
-    thumbnail:
-      title: "缩图显示设定"
-      speciesperrow:
-        title: "每列显示物种数"
-        opt-1: "最大：每列 1 个物种"
-        opt-2: "适中：每列 2 个物种"
-        opt-3: "小：每列 3 个物种"
-        opt-4: "最小：每列 4 个物种"
-        notforbigfonts: "大字体模式不适用"
-      thumbnailperspecies:
-        title: "每个物种缩图数"
-        opt-1: "显示 1 张缩图"
-        opt-2: "显示 2 张缩图"
-        opt-3: "显示 3 张缩图"
-    offline:
-      title: "下载图片张数"
-      opt-networkonly: "不下载"
-      opt-1: "每种1张图"
-      opt-2: "每种2张图"
-      opt-3: "每种3张图"
-      opt-4: "每种4张图"
-      opt-5: "每种5张图"
-      opt-6: "每种6张图"
-      opt-all: "下载全部图"
-    downloadoptions:
-      title: "自动下载方式"
-      any: "连线自动下载"
-      wifi: "只在WiFi下载"
-      off: "不自动下载"
-    download:
-      title: "现在下载"
-      progress: "进度 {number1}%"
-      pause: "按我暂停"
-      resume: "按我继续"
-      restart: "重新下载"
-    clear:
-      title: "清除已下载图片"
-      description: "您确定要删除所有已经下载到这装置的资料库图片吗?"
-      keepone: "每种保留一张图"
-    add:
-      title: "登录物种"
-      title2: "上传更多照片"
-      species: "学名"
-      species-hint: "输入拉丁学名..."
-      localname-zh_hant: "中名"
-      localname-zh_hant-hint: "(选填) 不同中文名之间以逗号分隔..."
-      localname-en: "英文俗名"
-      localname-en-hint: "(选填) 不同英文名之间以逗号分隔..."
-      credit: "原创者"
-      credit-hint: "输入原创者姓名..."
-      extlink: "网址"
-      extlink-hint: "Facebook或其他外部连结URL..."
-      images: "新增照片..."
-      error-species-empty: "拉丁学名不可为空白喔～"
-      error-species-format-error: "拉丁学名格式错误！"
-      error-credit-empty: "原创者姓名不可为空白喔～"
-      error-record-empty: "拍摄记录日期错误～"
-      error-invalid-url: "外部连结URL格式错误了。"
-      error-already-exists: "此笔资料已经存在。"
-      error-images: "请至少选择两张照片啦～"
-      error-images-1: "请至少选择一张照片啦～"
-      error-extension: "只能上传 JPG/JPEG 或 HEIC 照片格式喔～"
-      error-mailer: "没找到可用的 Mail App，请先设定好 Mail 才能上传。"
-      mail-savedtodraft: "邮件已经储存为草稿。"
-      mail-sent: "邮件传送成功。"
-      mail-canceled: "已经取消传送邮件。"
-      mail-unknown: "传送中发生未知错误。"
-      submitting: "缩图与传送中..."
-      license-info: "所有上传照片皆以 Creative Commons BY-NC 3.0 提供授权"
-      license-mail: "我确认此邮件中所有附带的资料与照片皆为本人原创，并同意以 Creative Commons BY-NC 3.0 提供授权使用。 https://creativecommons.org/licenses/by-nc/3.0/tw/"
-      first-photo: "第一张照片必须为最有代表性的<横式>照片。"
-    submitmeta:
-      title: "上传物种描述"
-      description: "预计上传物种描述笔数({number1})，预计上传记录比数({number2})。"
-      sending: "上传中，请稍候。。。"
-      successful: "上传成功"
-      failed: "上传失败"
-    change:
-      sci_name: "(新)拉丁学名"
-      local_name: "(新)物种中文名"
-      genus_chinese: "(新)属中文名"
-      type_species: "模式物种"
-      groups: "类别"
-    diff:
-      title: "最新增修摘要"
-      legend: "图例说明"
-      newly-added: "本次新增的物种"
-      newly-changed: "本次修改的物种"
-      deleted: "已删除的物种"
-    colordelta:
-      title: "颜色比对宽容度"
-      verylow: "极低/非常严格"
-      low: "低/严格"
-      medium: "中/一般"
-      high: "高/宽松"
-    env-stage: "使用Stage环境"
-  obs:
-    title: "我的观察纪录"
-    quality:
-      title: "照片储存画质"
-      high: "高画质 (2560x1440)"
-      medium: "中画质 (1920x1080)"
-      low: "低画质 (1280x760)"
-  map:
-    title: "地图"
-    source:
-      title: "地图来源"
-      osm: "OSM 开放街图 (线上版)"
-      rudymap: "鲁地图 (线上版)"
-  misc:
-    title: "其他"
-    termsofuse: "使用规范"
-    privacy: "隐私权政策"
-    admin:
-      title: "管理员专用"
-    feedback:
-      title: "意见反馈"
-      mailbody1: "Hi! 方吉你好，"
-      mailbody2: "这是我的意见反馈："
-      relatedinfo: "其他相关资讯："
-    contribute:
-      title: "感谢"
-      contribution: "{author} 贡献了 {species} 物种与 {images} 张图片。"
-    reset:
-      title: "恢复初始设定"
-      description: "您确定要恢复此 App 所有的初始设定吗？"
-  totalspecies: "物种总数"
-  totalimages: "照片总数"
-  app-version: "App版本"
-  db-version: "资料库"
-  platform: "手机操作系统"
-  date: "日期"
-
-download:
-  title: "下载资料库图片"
-  start: "开始下载"
-  downloading: "下载中，请勿离开此画面"
-  completed: "下载完成"
-  failed: "下载失败"
-  prep:
-    title: "开始前"
-    description: "只需下载尚未储存的图片吗？"
-    startover: "重新下载"
+  copytoclipboard: "存到剪贴簿"
 
 err:
   title-noreason: "错误"
@@ -344,7 +102,8 @@ err:
   connectionlost: "设备无法连上网路..."
   directorynotfound: '目录找不到: {dir}'
   filenotfound: '档案找不到: {file}'
-  dberror: '此笔资料已经找不到，可能已经移除或更名。'
+  dberror: '找不到此笔资料'
+  invalidroute: '无效的链结'
 
 meta:
   selectcolors: "选择颜色"
