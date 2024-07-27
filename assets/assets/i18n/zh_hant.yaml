@@ -105,6 +105,7 @@ err:
   dberror: '找不到此筆資料'
   invalidroute: '無效的鏈結'
   range-error: "無效的範圍"
+  title-redirect: "網址重新導向"
 
 meta:
   selectcolors: "選擇顏色"

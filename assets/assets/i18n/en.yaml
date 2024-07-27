@@ -103,8 +103,9 @@ err:
   directorynotfound: 'Directory not found: {dir}'
   filenotfound: 'File not found: {file}'
   dberror: 'The data might have been removed or renamed.'
-  range-error: "Invalid ranges"
   invalidroute: 'Invalid Route'
+  range-error: "Invalid ranges"
+  title-redirect: "Redirecting URL"
 
 meta:
   selectcolors: "Select colors"

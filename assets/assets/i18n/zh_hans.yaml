@@ -104,6 +104,8 @@ err:
   filenotfound: '档案找不到: {file}'
   dberror: '找不到此笔资料'
   invalidroute: '无效的链结'
+  range-error: "无效的范围"
+  title-redirect: "网域名称转址"
 
 meta:
   selectcolors: "选择颜色"
