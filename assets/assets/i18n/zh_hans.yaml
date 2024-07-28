@@ -103,7 +103,7 @@ err:
   directorynotfound: '目录找不到: {dir}'
   filenotfound: '档案找不到: {file}'
   dberror: '找不到此笔资料'
-  invalidroute: '无效的链结'
+  invalidroute: '无效的网域名称'
   range-error: "无效的范围"
   title-redirect: "网域名称转址"
 
