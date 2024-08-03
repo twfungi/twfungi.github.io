@@ -68,6 +68,7 @@ search:
   error:
     toomany: "太多搜尋結果"
     applyfilters: "請選擇更多搜尋條件"
+    nomatch: "沒有符合的資料"
 
 db:
   title: "方吉資料庫"

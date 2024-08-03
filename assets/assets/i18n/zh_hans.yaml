@@ -68,6 +68,7 @@ search:
   error:
     toomany: "太多搜寻结果"
     applyfilters: "请选择更多搜寻条件"
+    nomatch: "没有符合的资料"
 
 db:
   title: "方吉资料库"

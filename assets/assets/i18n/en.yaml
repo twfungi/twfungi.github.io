@@ -68,6 +68,7 @@ search:
   error:
     toomany: "Too many results."
     applyfilters: "Please try applying more filters."
+    nomatch: "No result"
 
 db:
   title: "Fungi"
