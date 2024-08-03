@@ -98275,7 +98275,7 @@ o=$.aDD
 n=A.d0()?"\u65b9\u5409\u5c0f\u518a":"Fungi Booklet"
 m=A.d5(a,"title")
 m=A.Mh(b,b,!1,b,b,1,b,b,b,!1,b,!1,b,b,b,b,!0,b,b,b,b,b,A.cf(m+(c.a.c.r==="stage"?" (Beta)":""),b,b,b,b,b,b,b),b,b,b,1,b)
-l=A.fc(A.aGh("icon-foreground.png",b),100,b)
+l=A.fc(A.aGh("assets/icon-foreground.png",b),100,b)
 k=c.r
 j=A.dG(b,A.f0(A.cf(A.d5(a,"search.error.nomatch"),b,b,b,b,b,b,b),b,b),B.z,b,b,p,b,200,b,b,b,b,b,b)
 i=A.d5(a,"search.byname")
