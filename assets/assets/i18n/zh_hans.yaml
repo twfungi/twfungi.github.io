@@ -26,6 +26,7 @@ debug: "除错"
 
 search:
   title: "搜寻"
+  result: "搜寻结果"
   history:
     title: "搜寻/浏览纪录"
   byname: "输入关键字..."
@@ -107,6 +108,7 @@ err:
   invalidroute: '无效的网域名称'
   range-error: "无效的范围"
   title-redirect: "网域名称转址"
+  toomany-results: "太多可能结果，请用不同关键字重新搜寻。"
 
 meta:
   selectcolors: "选择颜色"
@@ -259,6 +261,7 @@ meta:
   general:
     title: "一般特征"
     synonym: "同物异名"
+    currentname: "现名"
     aka: "俗名"
     height: "子实体长度"
     upto: "可达"

@@ -24,6 +24,7 @@ debug: "除錯"
 
 search:
   title: "搜尋"
+  result: "搜尋結果"
   history:
     title: "搜尋/瀏覽紀錄"
   byname: "輸入關鍵字..."
@@ -107,6 +108,7 @@ err:
   invalidroute: '無效的網址'
   range-error: "無效的範圍"
   title-redirect: "網址重新導向"
+  toomany-results: "太多可能結果，請用不同關鍵字重新搜尋。"
 
 meta:
   selectcolors: "選擇顏色"
@@ -259,6 +261,7 @@ meta:
   general:
     title: "一般特徵"
     synonym: "同物異名"
+    currentname: "現名"
     aka: "俗名"
     height: "子實體長度"
     upto: "可達"

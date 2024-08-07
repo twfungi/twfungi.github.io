@@ -26,6 +26,7 @@ debug: "Debug"
 
 search:
   title: "Search"
+  result: "Search result"
   history:
     title: "Search/Browsing History"
   byname: "Enter keyword here..."
@@ -107,6 +108,7 @@ err:
   invalidroute: 'Invalid Route'
   range-error: "Invalid ranges"
   title-redirect: "Redirecting URL"
+  toomany-results: "Too many results. Search again with a different keyword."
 
 meta:
   selectcolors: "Select colors"
@@ -259,6 +261,7 @@ meta:
   general:
     title: "General"
     synonym: "Synonym"
+    currentname: "Current name"
     aka: "Alias"
     height: "Height"
     upto: "up to "
