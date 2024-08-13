@@ -20,7 +20,7 @@ window.addEventListener('load', async function (ev) {
     serviceWorkerSettings: {
       timeoutMillis: 40000,
       serviceWorkerUrl: "flutter_service_worker.js?version_worker=" + version + "?build_worker=" + build,
-      serviceWorkerVersion: "2444025769",
+      serviceWorkerVersion: "3633319491",
     },
   });
 });
