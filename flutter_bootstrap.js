@@ -9,8 +9,18 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"b8800d88be4866db1b15f8b954ab2573bba9960f","builds":[{"compileTarget":"dart2js","renderer":"html","mainJsPath":"main.dart.js"}]};
 
 
-_flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "4116159263"
-  }
+window.addEventListener('load', async function (ev) {
+  const versionResponse = await fetch('/version.json?version=' + Date.now());
+  const versionJson = await versionResponse.json();
+  const version = versionJson['version'];
+  const build = versionJson['build_number'];
+  console.log(version + 'b' + build);
+  // Download main.dart.js
+  _flutter.loader.load({
+    serviceWorkerSettings: {
+      timeoutMillis: 40000,
+      serviceWorkerUrl: "flutter_service_worker.js?version_worker=" + version + "?build_worker=" + build,
+      serviceWorkerVersion: "2444025769",
+    },
+  });
 });
