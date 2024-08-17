@@ -108,7 +108,7 @@ err:
   invalidroute: '无效的网域名称'
   range-error: "无效的范围"
   title-redirect: "网域名称转址"
-  toomany-results: "太多可能结果，请用不同关键字重新搜寻。"
+  toomany-results: "太多可能结果({count})，请用不同关键字重新搜寻。"
 
 meta:
   selectcolors: "选择颜色"

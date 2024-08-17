@@ -108,7 +108,7 @@ err:
   invalidroute: 'Invalid Route'
   range-error: "Invalid ranges"
   title-redirect: "Redirecting URL"
-  toomany-results: "Too many results. Search again with a different keyword."
+  toomany-results: "Too many results({count}). Search again with a different keyword."
 
 meta:
   selectcolors: "Select colors"

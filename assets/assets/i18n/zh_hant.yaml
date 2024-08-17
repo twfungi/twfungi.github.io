@@ -108,7 +108,7 @@ err:
   invalidroute: '無效的網址'
   range-error: "無效的範圍"
   title-redirect: "網址重新導向"
-  toomany-results: "太多可能結果，請用不同關鍵字重新搜尋。"
+  toomany-results: "太多可能結果({count})，請用不同關鍵字重新搜尋。"
 
 meta:
   selectcolors: "選擇顏色"
