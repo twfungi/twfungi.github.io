@@ -1,4 +1,4 @@
-title: "Fungi Booklet"
+title: "Taiwan Fungi Booklet"
 
 yes: "Yes"
 close: "Close"
@@ -29,7 +29,7 @@ search:
   result: "Search result"
   history:
     title: "Search/Browsing History"
-  byname: "Enter keyword here..."
+  byname: "Enter fungi name 🍄 to search..."
   types:
     title: "Fungi Type"
     all: "ALL"
