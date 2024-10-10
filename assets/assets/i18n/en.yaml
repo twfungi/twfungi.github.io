@@ -1,5 +1,10 @@
 title: "Taiwan Fungi Booklet"
 
+tab:
+  macroscopic: "Macroscopic"
+  common: "Common"
+  seasonal: "Seasonal"
+
 yes: "Yes"
 close: "Close"
 no: "No"

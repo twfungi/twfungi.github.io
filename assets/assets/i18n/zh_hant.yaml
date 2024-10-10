@@ -1,5 +1,10 @@
 title: "台灣真菌與野菇圖鑑"
 
+tab:
+  macroscopic: "外觀分類"
+  common: "常見分類"
+  seasonal: "當季常見"
+
 yes: "確定"
 upload: "上傳"
 close: "關閉"

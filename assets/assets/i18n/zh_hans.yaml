@@ -1,5 +1,10 @@
 title: "台湾真菌与野菇图鉴"
 
+tab:
+  macroscopic: "外观分类"
+  common: "常见分类"
+  seasonal: "当季常见"
+
 yes: "确定"
 close: "关闭"
 no: "否"
