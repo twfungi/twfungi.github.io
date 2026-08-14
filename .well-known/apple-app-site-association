@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["5RWXYQL28V.com.app.fungiobserver123"],
+        "components": [
+          { "/": "/s/*", "comment": "species detail" }
+        ]
+      }
+    ]
+  }
+}

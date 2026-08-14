@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.codekila22.fungibooklet",
+      "sha256_cert_fingerprints": [
+        "A8:FE:0D:54:A0:9A:EA:54:5D:BB:BB:D0:A1:84:23:5D:0C:38:8A:CA:F6:EB:94:B5:E7:44:6E:0D:5B:11:F5:2B",
+        "38:63:AF:2C:52:8B:6A:81:2F:88:0E:3B:7B:8D:45:4B:71:99:6E:E7:84:BB:62:03:DB:75:39:01:08:78:00:99"
+      ]
+    }
+  }
+]
