@@ -4,7 +4,8 @@
       {
         "appIDs": ["5RWXYQL28V.com.app.fungiobserver123"],
         "components": [
-          { "/": "/s/*", "comment": "species detail" }
+          { "/": "/", "comment": "home page" },
+          { "/": "/s/*", "comment": "species / genus / family detail" }
         ]
       }
     ]
