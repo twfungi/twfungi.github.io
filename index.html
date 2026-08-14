@@ -133,6 +133,70 @@
 
 </head>
 <body>
+  <!-- ★★ 站內瀏覽器提示（Facebook／LINE／IG…）
+       ─────────────────────────────────────────────────────────────────────
+       這些 App 點連結是用自己內嵌的 WebView 開的，網址從頭到尾沒有變成交給
+       系統解析的 intent／openURL，所以 **Universal Links／App Links 不會觸發**
+       ——裝了 App 的人照樣被留在網頁裡。這不是我們的設定有問題，是內嵌瀏覽器
+       的行為，站方無法從自己這邊繞過（除非用自訂 scheme，本專案刻意不做）。
+
+       所以這裡只做一件事：**告訴使用者怎麼跳出去**。跳到系統瀏覽器之後，
+       iOS Safari 會自己依 AASA 顯示「在 Fungi Booklet App 中開啟」的橫幅。
+
+       ★ 寫成純 HTML/JS 放在 Flutter 啟動之前，不是做成 Flutter widget：
+         這批使用者正卡在最需要看到提示的那幾秒（splash 還在轉），等 Flutter
+         boot 完才顯示就太晚了。也因此它不能用 App 的 i18n，語言自己判。
+
+       ★ 選單位置刻意寫得籠統（「角落的 ⋯ 選單」）：FB／LINE 各版本把它放在
+         右上或右下都有，寫死一個位置遲早會變成錯的指示。 -->
+  <div id="iab-hint" hidden>
+    <span id="iab-hint-text"></span>
+    <button type="button" id="iab-hint-close" aria-label="close">✕</button>
+  </div>
+  <style>
+    #iab-hint {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 2147483647;
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; box-sizing: border-box;
+      background: #1b3a2b; color: #f2f7f3;
+      font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Noto Sans TC", sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    }
+    #iab-hint-text { flex: 1; }
+    #iab-hint-close {
+      flex: none; width: 32px; height: 32px; padding: 0;
+      background: transparent; border: 0; border-radius: 16px;
+      color: inherit; font-size: 17px; line-height: 1; cursor: pointer;
+    }
+    #iab-hint-close:active { background: rgba(255, 255, 255, .18); }
+  </style>
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      // FBAN/FBAV/FB_IAB = Facebook 與 Messenger；Line/ = LINE；
+      // Instagram、Barcelona(Threads) 同屬 Meta 的內嵌瀏覽器。
+      if (!/FBAN|FBAV|FB_IAB|FBIOS|Instagram|Barcelona|\bLine\//i.test(ua)) return;
+      try {
+        if (sessionStorage.getItem('iabHintDismissed') === '1') return;
+      } catch (e) { /* 無痕模式存取 sessionStorage 會丟例外，忽略即可 */ }
+
+      var zh = (navigator.language || '').toLowerCase().indexOf('zh') === 0;
+      document.getElementById('iab-hint-text').textContent = zh
+        ? '你正在 App 內建的瀏覽器裡，這種瀏覽器不會啟動「方吉」App。'
+          + '請點畫面角落的 ⋯ 選單 →「在瀏覽器開啟」。'
+        : 'You are in an in-app browser, which cannot open the Fungi Booklet '
+          + 'app. Tap the ⋯ menu and choose “Open in browser”.';
+
+      var bar = document.getElementById('iab-hint');
+      bar.hidden = false;
+      document.getElementById('iab-hint-close').addEventListener('click', function () {
+        bar.hidden = true;
+        try { sessionStorage.setItem('iabHintDismissed', '1'); } catch (e) { /* 同上 */ }
+      });
+    })();
+  </script>
+
   <picture id="splash">
       <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
       <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
