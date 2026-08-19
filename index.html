@@ -163,6 +163,13 @@
             "Noto Sans TC", sans-serif;
       box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
     }
+    /* ★★ 這條不能省，而且必須排在 `#iab-hint` 之後。
+       瀏覽器內建樣式表的 `[hidden] { display: none }` 只有 (0,0,1) 的優先權，
+       上面那條 `#iab-hint { display: flex }` 是 (1,0,0)——作者樣式贏，於是
+       `hidden` 屬性完全失效：這條列對每一個訪客都會出現，✕ 也關不掉
+       （handler 做的是 `bar.hidden = true`，而它本來就是 true）。
+       `#iab-hint[hidden]` 是 (1,1,0)，這樣 hidden 才真的管用。 */
+    #iab-hint[hidden] { display: none; }
     #iab-hint-text { flex: 1; }
     #iab-hint-close {
       flex: none; width: 32px; height: 32px; padding: 0;
